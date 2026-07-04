@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIK'S FOOD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <img src="images/logo.png.png" alt="Logo MIK'S FOOD" class="logo">
+
+    <h1>MIK'S FOOD</h1>
+
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Tacos</a>
+        <a href="#">Boissons</a>
+        <a href="#">contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Bienvenue chez MIK'S FOOD🍔🌭</h2>
+
+    <P>Des tacos délicieux, des boissons fraiches et un service de qualité.</P>
+
+    <a href="#" class="btn">Commander maintenant</a>
+
+</section>
+
+<main>
+
+    <button onclick="commander()">Commander maintenant</button>
+
+    <h2>📋 Notre Menu</h2>
+    
+    <div class="menu">
+        <div class="carte">
+            <img src="images/tacos1.jpg.jpg" alt="Tacos simple">
+            <h3>Tacos simple, fromage.</h3>
+            <p>Viande, salade, fromage.</p>
+            <h2>15 000FC</h2>
+
+        </div>
+        
+        <div class="carte">
+            <img src="images/tacos2.jpg.jpg" alt="Tacos Double">
+            <h3>Tacos Double</h3>
+            <p>Double viande, frites, fromage</p>
+            <h2>25 000FC</h2>
+
+        </div>
+
+        <div class="carte">
+            <img src="images/burger1.jpg.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p>Boeuf, fromage, légumes.</p>
+            <h2>5 000FC</h2>
+        </div>
+
+        <div class="carte">
+            <img src="images/fritte1.jpg.jpg" alt="frites">
+            <h3>Frites</h3>
+            <p>Frites croustillantes.</p>
+            <h2>10 000FC</h2>
+        </div>
+
+        <div class="carte">
+            <img src="images/coca.jpg.jpg" alt="coca-cola">
+            <h3>coca-cola</h3>
+            <p>Boisson fraiche</p>
+            <h2>2 500FC</h2>
+
+        </div>
+
+    </div>
+    <p>Découvrez nos délicieux tacos et nos boissons</p>
+fraiches</p>
+</main>
+
+<h2>Passer une commande</h2>
+
+<form>
+
+    <label>Nom :</label><br>
+    <input type="text" id="nom"><br><br>
+
+    <label>Produit :</label><br>
+    <select id="Produit">
+        <option value="15 000FC">🌮 Tacos simple - 15 000FC</option>
+        <option value="25 000FC">🌮 Tacos Double - 25 000FC</option>
+        <option value="5 000FC">🍔 Burger - 5 000FC</option>
+        <option value="10 000FC">🍟 Frites - 10 000FC</option>
+        <option value="2 500FC">🥤 coca-cola - 2 500FC</option>
+    </select>
+
+    <br><br>
+
+    <button type="button" onclick="ValiderCommande()">
+        valider la commande 
+    </button>
+
+    <p id="prix">prix : 0 FC</p>
+
+    <button type="button" onclick="calculerprix()">
+        voir le prix
+    </button>
+
+</form>
+
+
+
+<footer>
+    <h3> MIK'S FOOD</h3>
+    <P>📍 Lubumbashi, RDC</P>
+    <P>📞 +243 990502317</P>
+    <P>&copy; 2026 MIK'S FOOD. Tous droits réservés.</P>
+</footer>
+
+<a href="https://wa.me/243840786466" class="whatsApp">
+    💥commander sur whatsApp    
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
